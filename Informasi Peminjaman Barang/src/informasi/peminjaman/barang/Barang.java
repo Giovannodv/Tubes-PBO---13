@@ -9,7 +9,7 @@ package informasi.peminjaman.barang;
  *
  * @author Giovanno
  */
-public class Buku {
+public class Barang {
     private String nama;
     private String jenis;
     private String status;

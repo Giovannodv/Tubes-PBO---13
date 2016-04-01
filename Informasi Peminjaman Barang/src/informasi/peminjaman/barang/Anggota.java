@@ -10,9 +10,9 @@ package informasi.peminjaman.barang;
  * @author Giovanno
  */
 public class Anggota {
-    private Pinjaman[] riwayatPinjaman;
+    private Peminjaman[] riwayatPinjaman;
     
-    public createPinjaman (){
+    public createPinjaman (Date tanggal){
         
     }
     
