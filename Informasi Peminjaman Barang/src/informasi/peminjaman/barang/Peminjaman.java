@@ -9,7 +9,7 @@ package informasi.peminjaman.barang;
  *
  * @author Giovanno
  */
-public class Pemiddnjaman {
+public class Peminjaman {
     private Barang[] pinjaman;
     
     public addPeminjaman(Barang b){
