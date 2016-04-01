@@ -13,11 +13,11 @@ public class Anggota {
     private Peminjaman[] riwayatPinjaman;
     
     public createPinjaman (Date tanggal){
-        
+	Peminjaman.add(new Peminjaman(tanggal));
     }
     
     public kemablikanPinjaman (int i){
-        
+        return i;
     }
     
     public viewPinjaman{

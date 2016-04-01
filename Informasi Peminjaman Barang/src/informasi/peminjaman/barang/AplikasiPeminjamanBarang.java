@@ -83,34 +83,88 @@ public class AplikasiPeminjamanBarang {
     
     }
     
-    public void loginAdmin() {
-        System.out.println("Nama        : ");
-        String nama = scan.next();
-        System.out.println("No. Telp    : ");
-        String notelp = scan.next();
-        if (nama.equals("admin") && notelp.equals("admin")) {
-            this.menuAdmin();
+    public void loginUser() {
+        System.out.print("Username        : ");
+        String username = scan.next();
+        System.out.println("Password    : ");
+        String password = scan.next();
+        if (nama.equals("User") && password.equals("user")) {
+            this.menuUser();
         } else {
-            System.out.println("Password Admin Salah.");
+            System.out.println("Password User Salah.");
         }
     }
     
-    //==========================================Menu Admin======================================
-    public void menuAdmin() {
+    //==========================================Menu User======================================
+    public void menuUser() {
     int x;
         System.out.println(" ======================");
-        System.out.println("      MENU ADMIN      ");
+        System.out.println("        MENU USER      ");
         System.out.println(" ======================");
-        System.out.println("|  1.      |");
-        System.out.println("|  2.      |");
-        System.out.println("|  3.      |");
-        System.out.println("|  4.      |");
-        System.out.println("|  5.      |");
-        System.out.println("|  6.      |");
-        System.out.println("|  7.      |");
-        System.out.println("|  8.      |");
+        System.out.println("|  1. Create new user     				|");
+        System.out.println("|  2. Add pinjaman     					|");
+        System.out.println("|  3. Add / Remove Barang     			|");
+        System.out.println("|  4. Change Status Pinjaman     		|");
+        System.out.println("|  5. view kondisi Barang     			|");
+        System.out.println("|  6. Status Peminjaman     			|");
+        System.out.println("|  7. Status Barang     				|");
+        System.out.println("|  8. View Daftar Pinjaman	    		|");
+	System.out.println("|  9. View Daftar Barang Suatu Pinjaman	|");
+	System.out.println("|  10. Logout							|");
+	System.out.println("|  11. Exit								|");
         System.out.println(" ======================");
-        System.out.print("   Masukkan Pilihan Admin :  ");
-        x = scan.nextInt();
-        this.pilihanAdmin(x); 
+        System.out.print("   Masukkan Pilihan User :  ");
+        x = scan.nextInt();	
+        this.pilihanUser(x); 
+}
+    public void pilihanUser(int a) {
+
+        switch (a) {
+			
+            case 1:
+		();
+		createNewUser();
+                menuUser();
+                break;
+            case 2:
+		addPinjaman();
+                menuUser();
+                break;
+            case 3:
+                addorremoveBarang();
+                menuUser();
+                break;
+            case 4:
+                changeStatusPinjaman();
+                menuUser();
+                break;
+            case 5:
+                ();
+                menuUser();
+                break;
+            case 6:
+		();
+		menuUser
+                break;
+            case 7:
+		();
+		menuUser();
+                break;
+            case 8:
+                ();
+                menuUser();
+                break;
+            case 9:
+                ();
+                menuUser();
+                break;
+            case 10:
+                mainMenu();
+                break;
+            case 11:
+                ex = true;
+                System.exit(0);
+                break;
+        }
+    }
 }
